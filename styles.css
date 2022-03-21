@@ -1,0 +1,137 @@
+body {
+    background-color: powderblue;
+    text-align: center;
+    
+  }
+  h1 {
+    color: rgb(186, 253, 0);
+    font-family: "Press Start 2P", sans-serif;
+    text-align: center;
+  }
+  h2 {
+    color: rgb(104, 28, 28);
+    font-family: "Gochi Hand", sans-serif;
+    text-align: center;
+    font-size: 45px;
+   
+  }
+
+  h4 {
+    color: whitesmoke;
+    font-family: "Wendy One", sans-serif;
+    text-align: center;
+    font-size: 30px;
+   
+  }
+  p {
+      color: rgb(255, 255, 255);
+      font-family: sans-serif;
+  font-size: 100%;
+  
+  font-family: "Wendy One", sans-serif;
+
+  }
+  #wrapper{
+    margin: 50px 300px 50px 300px;
+    padding: 50px 50px 50px 50px;
+    border: 1px solid #817272;
+    background-color: #868686;
+    max-width: 1100px;
+    width: 100%;
+    text-align: center;
+}
+
+  /* only animate if the device supports hover */
+@media (hover: hover) {
+    #creditcard {
+      /*  set start position */
+      transform: translateY(110px);
+      transition: transform 0.1s ease-in-out;
+      /*  set transition for mouse enter & exit */
+    }
+  
+    #money {
+      /*  set start position */
+      transform: translateY(180px);
+      transition: transform 0.1s ease-in-out;
+      /*  set transition for mouse enter & exit */
+    }
+  
+    button:hover #creditcard {
+      transform: translateY(0px);
+      transition: transform 0.2s ease-in-out;
+      /*  overide transition for mouse enter */
+    }
+  
+    button:hover #money {
+      transform: translateY(0px);
+      transition: transform 0.3s ease-in-out;
+      /*  overide transition for mouse enter */
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.25rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .button:hover .button__text span {
+    transform: translateY(-0.25rem);
+    transition: transform .2s ease-in-out;
+  }
+  
+  /* styling */
+  
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+  
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    border: none;
+    outline: none;
+    background-color: purple;
+    padding: 1rem 90px 1rem 2rem;
+    position: relative;
+    border-radius: 8px;
+    letter-spacing: 0.7px;
+    background-color: #5086bd;
+    color: #fff;
+    font-size: 21px;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+  }
+  
+  .button__svg {
+    position: absolute;
+    overflow: visible;
+    bottom: 6px;
+    right: 0.2rem;
+    height: 140%;
+  }
+  .columnleft{
+      width: 49%;
+      float: left;
+      text-align: right;
+  }
+  .columnright{
+    width: 49%;
+    float: right;
+    text-align: left;
+}
